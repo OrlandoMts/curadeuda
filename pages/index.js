@@ -1,11 +1,18 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Input from '../components/Input'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
-    <div>
-      <h1 className='text-3xl font-bold'>Hola mundo</h1>
-    </div>
+    <Layout>
+      <Head>
+          <title>Inicio</title>
+          <meta name="home" content="Inicio de app" />
+      </Head>
+      
+      <main>
+        <Input />
+      </main>
+    </Layout>
   )
 }
