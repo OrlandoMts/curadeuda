@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Input from '../components/Input'
 import Layout from '../components/Layout'
+import PokemonList from '../components/PokemonList'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       
       <main>
         <Input />
+        <PokemonList />
       </main>
     </Layout>
   )
