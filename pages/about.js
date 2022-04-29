@@ -15,6 +15,9 @@ export default function About() {
                     <h1>Hola, mi nombre es Orlando Montes Antonio</h1>
                     <p>Soy ingeniero en Sistemas Computacionales, egresado del Instituto Tecnologico de Ciudad Madero</p>
                     <p>Realice esta prueba técnica para continuar en el proceso de selección de desarrollador Frontend Jr en <a href="https://www.curadeuda.com/" target="_blank" rel="noreferrer"  className="text-[#2bb99b]">CuraDeuda</a></p>
+                    <div>
+                        <p>Para este proyecto utilice React.js con Next.js y Redux para manejar el estado de la aplicación. El deploy lo hice en Vercel ya que me resulto más facil debido a que el proyecto lo hice en Next.js</p>
+                    </div>
                 </div>
             </main>
         </Layout>
