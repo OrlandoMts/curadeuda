@@ -1,4 +1,3 @@
-import { TOOGLEMENU } from "./types";
 import { createSlice } from "@reduxjs/toolkit";
 import { getPokemons, getPokemonsWithDetails } from '../api/getPokemons';
 
@@ -27,7 +26,8 @@ const pokemonsSlice = createSlice({
     }
   })
 
-
+// La siguiente función para realizar en llamado al api y guardar la data
+// en el store de la aplicación
 export const fetchPokemonsWithDetails = payload => async dispatch => {
   try {
       const res = await getPokemons();
@@ -42,6 +42,12 @@ export const fetchPokemonsWithDetails = payload => async dispatch => {
     }
 }
 
+/**
+ * La siguiente función es para ir buscando que pokemones coinciden con el texto introducido en el input
+ * @param {Son los pokemones} payload 
+ * @param {El valor introudcio en el input} input 
+ * @returns 
+ */
 export const selectPokemon = ( payload, input ) => dispatch => {
   let searchedPokemon = payload.filter(pokemon => {
       const searchInput = input.toLowerCase();
